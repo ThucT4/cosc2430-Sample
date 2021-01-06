@@ -1,0 +1,386 @@
+/******** Color & Border ********/
+
+/* Testing new repo name */
+
+#multibackground {
+  background-image: url('../img/orb-cres-bw.png'), url('../img/orb-step-bw.png'), url('../img/StoreyHall-cubeBW.jpg');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left, right, center;
+  background-size: 17vw, 17vw, cover;
+  color: white;
+}
+
+main > article > section{
+  border: solid #000054;
+  border-width: thin;
+  color: #000054;
+  background-image: url(../img/halflogo.svg), url(../img/image1.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top, left bottom;
+  background-size: 15%, 15%;
+}
+
+
+main > article > section.key header,
+main > article > section.title header {
+  color: #000054;
+  font-weight: bold;
+}
+
+footer {
+  background-color:#E60028;
+}
+header {
+  
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+main > article > section header {
+  text-shadow: 1px 1px 2px rgba(127,127,127,0.5);
+}
+
+
+footer a:link, footer a:visited,
+footer a:hover, footer a:active {
+  color:#FFC8C5;
+  text-shadow: 0px 0px 1px #F00;
+}
+footer a:hover, footer a:active {
+  color:#FFF;
+}
+footer img {
+    box-shadow:0px 0px 2px #FFC8C5;
+}
+
+body > header img {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9));
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9));
+}
+
+main > article > section header {
+  color: #000054;
+  font-weight: bold;
+}
+
+main > article > section > section {
+  /*background-color: rgba(255, 255, 255, 0.95);*/
+
+}
+
+nav {
+  background: repeating-radial-gradient(circle at top, #FFF, #FFF 25px, #DFDFDF 30px);
+  border-bottom: 1px solid #CCC;
+}
+
+nav > span {
+  background-color: rgba(0, 0, 0, 0.1);
+  height:200px;
+}
+
+nav > div:first-child span:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+nav > span {
+  border-radius: 5px;
+}
+
+#search:invalid
+{
+  background-color: #fcc;
+}
+
+#zoom:invalid {
+  background-image: url('../img/card-back-grey.html');
+}
+
+main > article > section.key {
+
+}
+
+main > article > section blockquote {
+  border: groove 4px #880000;
+}
+
+main > article > section table {
+  border: 2px rgba(200, 200, 200, 0.7) solid;
+}
+
+main > article > section table tr {
+  border: 1px #CCC solid;
+
+}
+
+main > article > section th {
+  background-color: #0078FF;
+}
+
+main > article > section tr:nth-child(even) td {
+  background-color: #BFDDFF;
+}
+
+main > article > section tr:nth-child(odd) td {
+  background-color: #7FBBFF;
+}
+
+main article section section {
+  /*font-size: 2vw;
+  /*padding-bottom: 20px;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 1px 1px 2px rgba(127, 127, 127, 0.5);
+}
+
+/* repurposing the <em> tag for underlined text
+   Justification: underlining is more like emphasing whereas italics is more like an alternative voice */
+
+em {
+  text-decoration: underline;
+  font-style: normal;
+}
+
+/* Code,kbd and nested code,kbd styles */
+
+code {
+  color:#22C;
+  background-color: rgba(255,255,229,0.25);
+  border: 1px #CCC solid;
+}
+
+kbd {
+  color:hsl(90, 100%, 85%);
+  background-color: rgb(0,0,0);
+}
+
+pre kbd {
+  border: 3px inset #EEB;
+}
+
+kbd span {
+  color:#DDC;
+}
+
+code span {
+  color:#B00;
+}
+
+.p {
+  color:#80D;
+}
+code span span {
+  color:#060;
+}
+
+code span span span {
+  color:#A40;
+}
+
+.ob {
+  border: thin orange dotted;
+  box-sizing: border-box;
+}
+
+
+/* Color of each module slides: lecture, tutorial, labs and assignments 
+   Revision 20180413 - styling HTML, CSS, JS and PHP differently and inline with logos */
+
+article[id^="slides-lecture"] section header {
+  color: #000054;
+  font-weight: bold;
+}
+
+article[id^="slides-lecture"] section#multibackground header {
+  color: white;
+  font-weight: bold;
+}
+
+
+article[id^="slides-lecture"] section.key header,
+article[id^="slides-lecture"] section.title header {
+
+}
+
+article[id^="slides-lecture"] section header span {
+  color: #000;
+}
+article[id^="slides-lecture"] section.key header span,
+article[id^="slides-lecture"] section.title header span {
+  color:#fff;
+}
+
+article section {
+  /*background-color: #d9d9d9;*/
+
+}
+
+
+article section.title{
+ /* background-color: #000054;
+  background-image: url("./Lecture0.png");
+  background-size: 100% 100%; */
+}
+
+
+
+article section.key section ol{
+ /* font-size: 2vw;*/
+}
+
+article section.key section ul{
+ /* font-size: 2vw;*/
+}
+
+article section.title section p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 250%;
+}
+
+article section.key span,
+article section.title div{
+  text-align: right;
+  /*color: #000054;
+  font-weight: bold;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;*/
+}
+
+
+/* HTML Slides */
+
+article[id^="slides-lecture"].html section header {
+
+}
+
+article[id^="slides-lecture"].html section.key header,
+article[id^="slides-lecture"].html section.title header {
+
+}
+
+/* CSS Slides */
+
+article[id^="slides-lecture"].css section header {
+
+}
+
+article[id^="slides-lecture"].css section.key header,
+article[id^="slides-lecture"].css section.title header {
+
+}
+
+/* JS Slides */
+
+article[id^="slides-lecture"].js section header {
+
+}
+
+article[id^="slides-lecture"].js section.key header,
+article[id^="slides-lecture"].js section.title header {
+
+}
+
+/* PHP Slides */
+
+article[id^="slides-lecture"].php section header {
+
+}
+
+article[id^="slides-lecture"].php section.key header,
+article[id^="slides-lecture"].php section.title header {
+
+}
+
+.trev-tryit textarea {
+  color:hsl(90, 100%, 85%);
+  background-color: #000;
+  border:4px inset hsl(120, 50%, 32%);
+  text-shadow: 1px 1px 1px hsla(120, 100%, 50%, 0.5);
+}
+
+
+/* End Block */
+
+.g,
+main a:visited {
+ /*color: #AA0082;*/
+}
+main a:link {
+  /*color: #000054;*/
+}
+main a:hover,
+main a:active {
+ /*color: #D47FC0;*/
+}
+
+
+.r {
+  color:#900;
+}
+
+.bl {
+  color: blue;
+}
+
+.sb {
+  color: saddlebrown;
+}
+
+.w {
+  color:white;
+}
+
+.x, del {
+  text-decoration: line-through;
+}
+
+.u {
+  text-decoration: underline;
+}
+
+.pd {
+  padding:20px;
+  display:inline-block;
+  background-color: rgba(0,100,0,0.2);
+}
+
+.error {
+  color:#900;
+  margin-left:0.5em;
+}
+
+main section > p > img,
+.bs {
+  box-shadow: 0px 0px 2px #999;
+}
+
+div.modal-block {
+  border: ridge 2px #999;
+  background: #eee;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+#overlayContent div:last-child {
+  border-top: thin #666 solid;
+}
+
+canvas {
+  box-shadow: 0px 0px 2px #840;
+}
+
+input[pattern]:invalid {
+  border: 2px red solid;
+  background-color:#faa;
+}
+
+figure {
+  padding:5px
+}
+figcaption {
+  font-size: 80%;
+}

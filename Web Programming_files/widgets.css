@@ -1,0 +1,494 @@
+/*******************************
+ Little widgets used in slide examples.
+ Order of first appearance.
+
+/* L0 Final Grade Calculator */
+
+#finalGrade {
+  display: inline-block;
+  margin-left:70px;
+  padding: 10px 15px;
+  border: 3px #C00 dashed;
+  border-radius: 10px;
+}
+#finalGrade label {
+  width: 50px;
+  display:inline-block;
+  margin-left:15px;
+}
+#finalGrade input {
+  width: 50px;
+  min-width: 50px;
+}
+#finalGrade input:out-of-range {
+  background-color:  #F66;
+}
+
+
+/* L2 Question and Answer <details> */
+details.qna,
+details.qna summary {
+  margin-top: 0.5em;
+  margin-bottom: 1.2em;
+}
+details.qna {
+  color: #C00;
+  margin-left:10px;
+}
+details.qna summary {
+  color:black;
+  outline: none;
+}
+details.qna summary code {
+  padding:0.3em 0.5em;
+  border-left-width: 0.3em;
+}
+
+
+/* L3 CSS Concepts */
+
+.cssconcept {
+  color: green;
+  background-color: khaki;
+  font-size: xx-large;
+  text-align: center;
+  width: 80%;
+  border: thick red dotted;
+  padding: 2px 10px;
+}
+
+/* Example L3 pseudo */
+.csspseudofl::first-line {
+  color:darkcyan;
+  font-style: italic;
+  font-size: 120%;
+}
+.csspseudoflt::first-letter {
+  color:darkcyan;
+  font-size: 200%;
+}
+.csspseudob4a::before,
+.csspseudob4a::after {
+  content: " \" ";
+  color:darkcyan;
+  font-weight: bold;
+  font-size: 150%;
+}
+.csspseudosmile::after {
+  content: " \2764 ";
+  color:darkred;
+  font-weight: bold;
+  font-size: 150%;
+}
+.csspseudoshape::before {
+  content: url('../img/favicon.html');
+}
+.cssdontcopy::selection {
+  color: rgba(0,0,0,0);
+}
+
+/* L3 RGB and HSL Simulators */
+
+#pixel-sim,
+#pixel-sim2 {
+  text-align:center;
+  padding:0.3em;
+  background-color: black;
+  float:left;
+  margin-right: 1em;
+}
+#pixel-r,
+#pixel-g,
+#pixel-b,
+#pixel-r2,
+#pixel-g2,
+#pixel-b2{
+  height:2.8em;
+  background-color:#000;
+  color:#fff;
+  border:black 1px solid;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding-top:5%;
+}
+#pixel-rgb,
+#pixel-hsl {
+  height:16em;
+  width:11em;
+  background-color:#000;
+  color:#fff;
+  display:inline-block;
+  padding-top:20%;
+  box-sizing: border-box;
+  border: 4px ridge #444;
+  border-radius: 1em;  
+  margin-bottom: 0.5em;
+}
+#pixel-hsl {
+  font-size: smaller;
+}
+
+/* 24 bit color gradient */
+#color24bit span {
+  padding:0.4em;
+}
+
+/* L3 Inline-Block Quiz Box */
+.iqb {
+  border: ridge 2px #c00;
+  background-color: #fafafa;
+  border-radius: 5px;
+  padding: 0.5em; 
+  margin: 0 0.5em 0.5em 0;
+  display: inline-block;
+}
+
+/* Experimental rotation, prob L4 intro */
+
+.l90 {
+    transform-origin: 0% 100%;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+
+/* L4 Text Style */
+
+.demobox,
+.demoboxV,
+.demoboxVH,
+#absvsrel {
+  box-sizing:border-box;
+  border: dashed 1px #060;
+  overflow:auto;
+  padding:0px;
+}
+.demoboxV {
+  resize: vertical;
+}
+.demoboxVH {
+  display: inline-block;
+  resize: both;
+}
+
+#absvsrel p {
+  border: 10px #B63 ridge;
+  background-color: #ded;
+  padding: 20px;
+  padding: 0;
+} 
+
+.resize {
+  margin:0px;
+  padding:0px;
+  border:thin green dotted;
+  box-sizing:border-box;
+}
+
+/* 20160623: Fix: Uniform style for all 4 demoboxes */
+#demoboxmodel1,
+#demoboxmodel2,
+#demoboxmodel3,
+#demoboxmodel4,
+#demoboxmodel5
+{
+  border: 10px #B63 ridge;
+  background-color: #ded;
+  padding: 20px;
+}
+
+#demoboxmodel1
+{
+  margin:1em;
+  width: 200px;
+}
+
+#demoboxmodel2
+{
+  width:100%;
+}
+
+#demoboxmodel3
+{
+  width: 100%;
+  box-sizing: border-box;  
+}
+
+
+#demoboxmodel4 {
+  margin: 30px;
+  width: calc(100% - 2 * 30px);
+  box-sizing: border-box;
+}
+
+#demoboxmodel5 {
+  min-width: 300px;
+  max-width: 600px;
+  width: 50%;
+}
+
+#democorners,
+#democorners2 {
+  border: 2px solid #030;
+  padding: 20px;
+  background: url('../img/penrose-dark.png');
+  color: #ff3;
+  font-weight: bold;
+  font-size: 120%;
+}
+#democorners {
+  border-radius: 10px;  
+}
+#democorners2 {
+  border-radius: 50%;  
+  text-align: center;
+  overflow: auto;
+  resize: both;
+  width:50%;
+}
+
+#absvsrel p {
+  border-width: 0;
+  margin:0px;
+}
+
+#demoshadow,
+#demoshadow2,
+#demoshadow3,
+#demoshadow4
+{
+  display: inline-block;
+  margin: 1.5em 5% 0.5em;
+  padding:1.5em;
+  text-align:right;
+  width: 84%;
+  background-color:#44c;
+  color:#ee3;
+  box-shadow: 1px 1px 3px 2px #333;
+}
+#demoshadow2 {
+  box-shadow: inset 1px 1px 3px 2px #333;
+}
+#demoshadow p:first-child,
+#demoshadow2 p:first-child,
+#demoshadow4 p:first-child {
+  font-family: lobster;
+  font-size: 2em;
+  margin:0px;
+  line-height: 1;
+  text-shadow: 1px 1px 2px #CC9;
+}
+#demoshadow p:last-child,
+#demoshadow2 p:last-child,
+#demoshadow4 p:last-child
+{
+  margin:0px;
+  font-size: 0.5em;
+  font-style: italic;
+}
+
+#demoshadow3 p {
+  font-family: lobster;
+  text-align: center;
+  font-size: 5em;
+  margin: 0px 0px 0.2em;
+  text-shadow:
+    6px 3px 3px rgba(0,0,0,0.7),
+    -1px -1px 2px rgba(255,255,255,1);
+}
+
+#demoshadow img,
+#demoshadow2 img,
+#demoshadow4 img {
+  float:left;
+}
+#demoshadow2 img {
+  -webkit-filter: drop-shadow(1px 1px 4px #fff);
+  -moz-filter: drop-shadow(1px 1px 4px #fff);
+  -o-filter: drop-shadow(1px 1px 4px #fff);
+  filter: drop-shadow(1px 1px 4px #fff);
+}
+
+#shadow-inset,
+#shadow-v,
+#shadow-h,
+#shadow-b,
+#shadow-s {
+  min-width:10px;
+}
+
+
+
+.demobg {
+  font-size: 150%;
+  padding:0.5em;
+}
+#demolineargradient1 {
+  background: -webkit-linear-gradient(left, red, orange, yellow, green, cyan, blue, violet); 
+  background: -o-linear-gradient(left, red, orange, yellow, green, cyan, blue, violet); 
+  background: -moz-linear-gradient(left, red, orange, yellow, green, cyan, blue, violet); 
+  background: linear-gradient(left, red, orange, yellow, green, cyan, blue, violet); 
+}
+#demolineargradient2,
+#demolineargradient3 {
+  background: -webkit-linear-gradient(top, hsla(180,100%,50%,1), hsla(180,100%,50%,0)); 
+  background: -o-linear-gradient(top, hsla(8,100%,50%,1), hsla(180,100%,50%,0)); 
+  background: -moz-linear-gradient(top, hsla(180,100%,50%,1), hsla(180,100%,50%,0)); 
+  background: linear-gradient(top, hsla(180,100%,50%,1), hsla(180,100%,50%,0)); 
+}
+#demorepeatlineargradient1 {
+  background: -webkit-repeating-linear-gradient(270deg, #A00, #F00 5%, #A00 10%);
+  background: -o-repeating-linear-gradient(270deg, #A00, #F00 5%, #A00 10%);
+  background: -moz-repeating-linear-gradient(270deg, #A00, #F00 5%, #A00 10%);
+  background: repeating-linear-gradient(270deg, #A00, #F00 5%, #A00 10%);
+}
+
+#demorepeatlineargradient2 {
+  background: -webkit-repeating-linear-gradient(315deg, #A00, #A00 10px, #F00 10px, #F00 20px);
+  background: -o-repeating-linear-gradient(315deg, #A00, #A00 10px, #F00 10px, #F00 20px);
+  background: -moz-repeating-linear-gradient(315deg, #A00, #A00 10px, #F00 10px, #F00 20px);
+  background: repeating-linear-gradient(315deg, #A00, #A00 10px, #F00 10px, #F00 20px);
+}
+
+#demoradialgradient1 {
+  background: -webkit-radial-gradient(red, white); 
+  background: -o-radial-gradient(red, white); 
+  background: -moz-radial-gradient(red, white); 
+  background: radial-gradient(red, white);
+}
+
+#demoradialgradient2 {
+  background: -webkit-radial-gradient(closest-side, red, white); 
+  background: -o-radial-gradient(closest-side, red, white); 
+  background: -moz-radial-gradient(closest-side, red, white); 
+  background: radial-gradient(closest-side, red, white);
+}
+
+#demoradialgradient3 {
+  background: -webkit-radial-gradient(circle, red, white); 
+  background: -o-radial-gradient(circle, red, white); 
+  background: -moz-radial-gradient(circle, red, white); 
+  background: radial-gradient(circle, red, white);
+}
+
+#demorepeatradialgradient1 {
+  background: -webkit-repeating-radial-gradient(red, white 10%, red 20%); 
+  background: -o-repeating-radial-gradient(red, white 10%, red 20%); 
+  background: -moz-repeating-radial-gradient(red, white 10%, red 20%); 
+  background: repeating-radial-gradient(red, white 10%, red 20%);
+}
+
+#demorepeatradialgradient2 {
+  background: -webkit-repeating-radial-gradient(circle, red, red 20px, white 20px, white 40px); 
+  background: -o-repeating-radial-gradient(circle, red, red 20px, white 20px, white 40px); 
+  background: -moz-repeating-radial-gradient(circle, red, red 20px, white 20px, white 40px); 
+  background: repeating-radial-gradient(circle, red, red 20px, white 20px, white 40px);
+}
+#demobgimg1 {
+  background-image: url('../img/parchment.jpg');
+}
+#demobgimg2,
+#demobgimg3,
+#demobgimg4 {
+  background: #FF9 url('../img/rmit-orb-ghost.png');
+}
+#demobgimg3 {
+  background-repeat: no-repeat;
+}
+#demobgimg4 {
+  background: #FFF url('../img/css-is-awesome.png');
+  background-size:cover;
+}
+#demobgimg5 {
+  background: #393 url('../img/css-is-awesome.png') 60% 45% / cover no-repeat;
+}
+
+#demobgimg6 img {
+  height: 100px;
+  vertical-align: middle;
+}
+
+#demoposition {
+  border: 2px solid green;
+  padding: 10px;
+  background-color:#efe;
+}
+#sticky {
+  height:300px;
+  width:700px;
+  overflow-y: scroll;
+  margin-left:10px;
+  box-shadow: 0px 0px 2px #ccc;
+}
+#sticky img {
+  position: sticky;
+  width:127px;
+}
+#sticky > img:nth-of-type(2) {
+  margin-left:128px;
+}
+#sticky > img:nth-of-type(3) {
+  margin-left:256px;
+}
+#sticky > img:nth-of-type(4) {
+  margin-left:384px;
+}
+#sticky > img:nth-of-type(5) {
+  margin-left:512px;
+}
+.card {
+  font-size: 5em;
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  border-radius: 3px;
+  border: 2px solid black;
+  display:inline-block;
+  text-align: center;
+  background: -webkit-repeating-linear-gradient(315deg, #F66, #F66 10px, #FFF 10px, #FFF 20px);
+  background: -o-repeating-linear-gradient(315deg, #F66, #F66 10px, #FFF 10px, #FFF 20px);
+  background: -moz-repeating-linear-gradient(315deg, #F66, #F66 10px, #FFF 10px, #FFF 20px);
+  background: repeating-linear-gradient(315deg, #F66, #F66 10px, #FFF 10px, #FFF 20px);
+}
+
+#css-mq {
+  border: 5px #ccc dashed;
+}
+#css-mq div {
+  border: 1px #c00 solid;
+  padding: 30px 0px;
+  text-align: center;
+  display:inline-block;
+  box-sizing: border-box;
+  width:calc(90vw / 1);
+}
+
+@media only screen and (min-width: 700px) {
+  #css-mq div {
+    width: calc(90vw / 2);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #css-mq div {
+    width: calc(90vw / 3);
+  }
+}
+
+/* C.R.A.P. */
+
+ul.crap li::first-letter {
+  color:#AA0082;
+  font-size: 180%;
+  font-weight: 900;
+  font-family: fantasy;
+}
+
+/* L7 Parchment like area */
+.parch {
+  background-image: url('../img/parchment.jpg');
+  display: inline-block;
+  padding:1em 2em;
+  box-shadow: 1px 1px 2px #676249;
+  border-radius: 2px 5px;
+}

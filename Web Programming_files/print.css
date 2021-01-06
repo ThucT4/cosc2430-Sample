@@ -1,0 +1,100 @@
+/******** Print versions ********/
+
+@media print {
+  html, body {
+    background: none;
+    min-width:100%;
+    min-height:100%;
+  }
+  #utils,
+  body > header,
+  nav,
+  footer {
+    display: none;
+  }
+  main > article {
+    page-break-after: always;
+  }
+  main > article > section {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    page-break-after: always;
+    border: solid 2px #CCC;
+    background-color:#fff;
+  }
+  main > article > section:last-child {
+    page-break-after:auto;
+  }
+    main > article > section.title {
+    background-color:#000;
+  }
+  main > article > section header {
+    background-color: #CCC;
+  }
+  main > article > section.key header {
+    background-color: #000;
+  }
+  main > article > section.title header {
+    background-color: #000;
+  }
+  main > article > section main {
+    vertical-align:middle;
+  }
+  main > article > section.title main {
+    background: rgba(0,0,0,0);
+  }
+
+  /* modal-block currently over-flowing onto next page. Turning off for the moment. 
+  .modal-block div:nth-child(2) {
+    padding: 0.5em;
+    border:thin dotted #ccc;
+    margin: 0.5em 0;
+    display:block;
+    background: repeating-linear-gradient(
+      45deg,
+      #eee,
+      #eee 5px,
+      #fff 5px,
+      #fff 10px
+    );
+  }
+  
+  .modal-block div:nth-child(2) div {
+    display:none;
+    page-break-after: always;
+  }
+
+  can't work out disproportinate sizing
+
+  */
+  img {
+    max-height:70mm;
+    max-width: 70mm;
+  }
+
+}
+
+@media print and (orientation: landscape) {
+  main > article > section {
+    min-height: 170mm;
+    max-height: 240mm;
+  }
+}
+
+@media print and (orientation: portrait) {
+  main > article > section {
+    min-height: 277mm;
+  }
+}
+
+/* Knockout styles for non-print media */
+@media not print {
+  figure {
+    max-width:80%;
+  }
+}
+figure {
+    max-width:80%;
+  }
+}
