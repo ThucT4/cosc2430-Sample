@@ -416,216 +416,29 @@
         <header>Course Timeline</header>
         <section class="content">
           <h1>Course Assessment</h1>
-          <script type="text/javascript" src="Web%20Programming_files/loader.js(2).download"></script>
-          <div class="fr">
-            <div id="finalGrade">
-              <h3>Final Grade Estimator</h3>
-              <p>
-                <label>A1</label><input id="a1" type="number" min="0" max="5" placeholder="/5" oninput="finalResult()">
-                <label>A2</label><input id="a2" type="number" min="0" max="15" placeholder="/15"
-                  oninput="finalResult()"><br>
-                <label>A3</label><input id="a3" type="number" min="0" max="15" placeholder="/15"
-                  oninput="finalResult()">
-                <label>A4</label><input id="a4" type="number" min="0" max="15" placeholder="/15"
-                  oninput="finalResult()"><br>
-                <label>Test</label><input id="ex" type="number" min="0" max="100" placeholder="/100"
-                  oninput="finalResult()">
-                <label>Total</label><strong id="finalResult"></strong>
-              </p>
-            </div>
-            <div id="assesspie">
-              <div style="position: relative;">
-                <div dir="ltr" style="position: relative; width: 550px; height: 350px;">
-                  <div aria-label="A chart."
-                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="550"
-                      height="350" aria-label="A chart." style="overflow: hidden;">
-                      <defs id="_ABSTRACT_RENDERER_ID_0"></defs>
-                      <g>
-                        <rect x="334" y="67" width="111" height="88" stroke="none" stroke-width="0" fill-opacity="0"
-                          fill="#ffffff"></rect>
-                        <g column-id="Assignment 1">
-                          <rect x="334" y="67" width="111" height="12" stroke="none" stroke-width="0" fill-opacity="0"
-                            fill="#ffffff"></rect>
-                          <g><text text-anchor="start" x="351" y="77.2" font-family="Arial" font-size="12" stroke="none"
-                              stroke-width="0" fill="#222222">Assignment 1</text></g>
-                          <circle cx="340" cy="73" r="6" stroke="none" stroke-width="0" fill="#33aa44"></circle>
-                        </g>
-                        <g column-id="Assignment 2">
-                          <rect x="334" y="86" width="111" height="12" stroke="none" stroke-width="0" fill-opacity="0"
-                            fill="#ffffff"></rect>
-                          <g><text text-anchor="start" x="351" y="96.2" font-family="Arial" font-size="12" stroke="none"
-                              stroke-width="0" fill="#222222">Assignment 2</text></g>
-                          <circle cx="340" cy="92" r="6" stroke="none" stroke-width="0" fill="#339944"></circle>
-                        </g>
-                        <g column-id="Assignment 3">
-                          <rect x="334" y="105" width="111" height="12" stroke="none" stroke-width="0" fill-opacity="0"
-                            fill="#ffffff"></rect>
-                          <g><text text-anchor="start" x="351" y="115.2" font-family="Arial" font-size="12"
-                              stroke="none" stroke-width="0" fill="#222222">Assignment 3</text></g>
-                          <circle cx="340" cy="111" r="6" stroke="none" stroke-width="0" fill="#227733"></circle>
-                        </g>
-                        <g column-id="Assignment 4">
-                          <rect x="334" y="124" width="111" height="12" stroke="none" stroke-width="0" fill-opacity="0"
-                            fill="#ffffff"></rect>
-                          <g><text text-anchor="start" x="351" y="134.2" font-family="Arial" font-size="12"
-                              stroke="none" stroke-width="0" fill="#222222">Assignment 4</text></g>
-                          <circle cx="340" cy="130" r="6" stroke="none" stroke-width="0" fill="#225522"></circle>
-                        </g>
-                        <g column-id="Final Exam">
-                          <rect x="334" y="143" width="111" height="12" stroke="none" stroke-width="0" fill-opacity="0"
-                            fill="#ffffff"></rect>
-                          <g><text text-anchor="start" x="351" y="153.2" font-family="Arial" font-size="12"
-                              stroke="none" stroke-width="0" fill="#222222">Final Exam</text></g>
-                          <circle cx="340" cy="149" r="6" stroke="none" stroke-width="0" fill="#113322"></circle>
-                        </g>
-                      </g>
-                      <g>
-                        <path d="M210,175L315,174.99999999999997A105,105,0,0,1,105,175L210,175A0,0,0,0,0,210,175"
-                          stroke="#ffffff" stroke-width="1" fill="#113322"></path><text text-anchor="start"
-                          x="210.00000000000003" y="266.2" font-family="Arial" font-size="12" stroke="none"
-                          stroke-width="0" fill="#ffffff">50%</text>
-                      </g>
-                      <g>
-                        <path
-                          d="M210,175L271.71745149070966,90.0532155906305A105,105,0,0,1,315,175L210,175A0,0,0,0,0,210,175"
-                          stroke="#ffffff" stroke-width="1" fill="#225522"></path><text text-anchor="start"
-                          x="290.2995334107218" y="138.28534414470911" font-family="Arial" font-size="12" stroke="none"
-                          stroke-width="0" fill="#ffffff">15%</text>
-                      </g>
-                      <g>
-                        <path
-                          d="M210,175L177.55321559063051,75.13906578900888A105,105,0,0,1,271.71745149070966,90.05321559063051L210,175A0,0,0,0,0,210,175"
-                          stroke="#ffffff" stroke-width="1" fill="#227733"></path><text text-anchor="start"
-                          x="223.62061330019677" y="93.20283214507903" font-family="Arial" font-size="12" stroke="none"
-                          stroke-width="0" fill="#ffffff">15%</text>
-                      </g>
-                      <g>
-                        <path
-                          d="M210,175L110.13906578900888,142.5532155906305A105,105,0,0,1,177.55321559063051,75.13906578900888L210,175A0,0,0,0,0,210,175"
-                          stroke="#ffffff" stroke-width="1" fill="#339944"></path><text text-anchor="start"
-                          x="147.30753467862542" y="116.50753467862545" font-family="Arial" font-size="12" stroke="none"
-                          stroke-width="0" fill="#ffffff">15%</text>
-                      </g>
-                      <g>
-                        <path
-                          d="M210,175L105,175A105,105,0,0,1,110.13906578900888,142.5532155906305L210,175A0,0,0,0,0,210,175"
-                          stroke="#ffffff" stroke-width="1" fill="#33aa44"></path><text text-anchor="start"
-                          x="119.25871233258316" y="164.82799193846844" font-family="Arial" font-size="12" stroke="none"
-                          stroke-width="0" fill="#ffffff">5%</text>
-                      </g>
-                      <g></g>
-                    </svg>
-                    <div aria-label="A tabular representation of the data in the chart."
-                      style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>Task</th>
-                            <th>Hours per Day</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Assignment 1</td>
-                            <td>5</td>
-                          </tr>
-                          <tr>
-                            <td>Assignment 2</td>
-                            <td>15</td>
-                          </tr>
-                          <tr>
-                            <td>Assignment 3</td>
-                            <td>15</td>
-                          </tr>
-                          <tr>
-                            <td>Assignment 4</td>
-                            <td>15</td>
-                          </tr>
-                          <tr>
-                            <td>Final Test</td>
-                            <td>50</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div aria-hidden="true"
-                  style="display: none; position: absolute; top: 360px; left: 560px; white-space: nowrap; font-family: Arial; font-size: 12px;">
-                  Final in-class Test</div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <script type="text/javascript">
-            // Load google charts
-            google.charts.load('current', { 'packages': ['corechart'] });
-            google.charts.setOnLoadCallback(drawChart);
-
-            // Draw the chart and set the chart values
-            function drawChart() {
-              var data = google.visualization.arrayToDataTable([
-                ['Task', 'Hours per Day'],
-                ['Assignment 1', 5],
-                ['Assignment 2', 15],
-                ['Assignment 3', 15],
-                ['Assignment 4', 15],
-                ['Final Test', 50]
-              ]);
-
-              var options = {
-                backgroundColor: 'transparent',
-                pieStartAngle: 270,
-                'width': 550,
-                'height': 350,
-                'colors': [
-                  '#3A4',
-                  '#394',
-                  '#273',
-                  '#252',
-                  '#132'
-                ]
-              };
-
-              // Display the chart inside the <div> element with id="piechart"
-              var chart = new google.visualization.PieChart(document.getElementById('assesspie'));
-              chart.draw(data, options);
-            }
-          </script>
+          
           <p>The assessments are made up of two components:</p>
           <ul>
-            <li><strong>Practical Component (worth 50%):</strong> includes 4 assignments</li>
-            <li><strong>In-class Test Component (worth 50%):</strong> a final 2 hour (+ 10 minutes reading time)
-              closed-book in-class test
+            <li><strong>Practical Component (worth 60%):</strong> includes 3 group projects</li>
+            <li><strong>In-class Exam Component (worth 40%):</strong> a final 2 hour (reading & setup time included)
+              open-book (physical materials only) in-class individual test
             </li>
           </ul>
           <p>There are no hurdles, just add the assignment and the exam contributions together to get your final grade.
           </p>
           <h2>Practical Component</h2>
           <dl>
-            <dt>Assignment 1 - due at the end of week 3</dt>
-            <dd>Git &amp; Coreteaching setup / HTML &amp; Wireframe focus (5%)</dd>
-            <dt>Assignment 2 - due at the end of week 6</dt>
-            <dd>HTML &amp; CSS focus (15%)</dd>
-            <dt>Assignment 3 - due at the end of week 9</dt>
-            <dd>Javascript focus (15%)</dd>
-            <dt>Assignment 4 - due at the end of week 12</dt>
-            <dd>PHP focus (15%)</dd>
+            <dt>Group project 1 - due at mid of week 6</dt>
+            <dd>Git &amp; HTML &amp; CSS (15%)</dd>
+            <dt>Group project 2 - due at mid of week 9</dt>
+            <dd>JavaScript (15%)</dd>
+            <dt>Group project 3 - due at the end of week 12</dt>
+            <dd>Full-stack application (30%)</dd>
           </dl>
           <h2>Course Engagement</h2>
           <p>Each week from week 2 there are "non-assessed" exercises in the tutes and labs. It is strongly recommended
-            that you complete these exercises to consolidate your learning and save your work to the <code>ce</code>
-            folder inside your <code>wp</code> folder.</p>
-          <p>After you receive assignment feedback, we would like you to build those suggestions / corrections into your
-            assignment work, be it the past assignment (eg programming changes) or the next assignment changes (eg CSS
-            changes). Please make a note of these changes in the <code>updates.txt</code> file inside your
-            <code>ce</code> folder.</p>
-          <h3>Final Grade Safety Net</h3>
-          <p>At the end of the study period, if your final mark is on a grade borderline, eg a 48 / 49 / 59 / 69 / 79,
-            we will come back and review your <code>ce</code> folder to see if your course engagement work warants an
-            upgrade to the next grade bracket.</p>
+            that you complete these exercises to consolidate your learning.</p>
         </section>
-
 
       </section>
 
