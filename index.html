@@ -710,10 +710,10 @@
           <p>Today, the anchor tag can contain plain text, images, or blocks of HTML. When a user clicks on anything
             inside the anchor tag, the user will be taken to a new web resource.:</p>
           <p>
-            <code>&lt;p&gt;&lt;a href='<span>../DataSources/Top.html</span>'&gt;<span>What's out there?</span>&lt;/a&gt;&lt;p&gt;</code>
+            <code>&lt;p&gt;&lt;a href="<span>../DataSources/Top.html</span>"&gt;<span>What's out there?</span>&lt;/a&gt;&lt;p&gt;</code>
             (a small section of 'clickable' text)</p>
           <p>
-            <code>&lt;body&gt;&lt;a href='<span>anotherpage.html</span>'&gt;<span><span> /* ... entire page content ... */ </span></span>&lt;/a&gt;&lt;body&gt;</code>
+            <code>&lt;body&gt;&lt;a href="<span>anotherpage.html</span>"&gt;<span><span> /* ... entire page content ... */ </span></span>&lt;/a&gt;&lt;body&gt;</code>
             (entire page is a hyperlink)</p>
         </section>
 
@@ -726,30 +726,30 @@
           <h1>Anchor Element</h1>
           <p>The anchor tag can be used to link to other documents:</p>
           <p>
-            <code>&lt;a href='<span>anotherpage.html</span>'&gt;<span>Go to a document in the same directory</span>&lt;/a&gt;</code>
+            <code>&lt;a href="<span>anotherpage.html</span>"&gt;<span>Go to a document in the same directory</span>&lt;/a&gt;</code>
           </p>
           <p>
-            <code>&lt;a href='<span><span>subdirectory/</span>anotherpage.html</span>'&gt;<span>Go to a document in a sub-directory</span>&lt;/a&gt;</code>
+            <code>&lt;a href="<span><span>subdirectory/</span>anotherpage.html</span>"&gt;<span>Go to a document in a sub-directory</span>&lt;/a&gt;</code>
           </p>
           <p>
-            <code>&lt;a href='<span><span>../</span>anotherpage.html</span>'&gt;<span>Go to a document in the parent directory</span>&lt;/a&gt;</code>
+            <code>&lt;a href="<span><span>../</span>anotherpage.html</span>"&gt;<span>Go to a document in the parent directory</span>&lt;/a&gt;</code>
           </p>
           <p>
-            <code>&lt;a href='<span><span>/~s1234567/wp/</span>anotherpage.html</span>'&gt;<span>Go to a document in your wp directory</span>&lt;/a&gt;</code>
+            <code>&lt;a href="<span><span>/~s1234567/wp/</span>anotherpage.html</span>"&gt;<span>Go to a document in your wp directory</span>&lt;/a&gt;</code>
           </p>
           <p>
-            <code>&lt;a href='<span><span>http://anotherserver.com/</span>anotherpage.html</span>'&gt;<span>Go to a document on another server</span>&lt;/a&gt;</code>
+            <code>&lt;a href="<span><span>http://anotherserver.com/</span>anotherpage.html</span>"&gt;<span>Go to a document on another server</span>&lt;/a&gt;</code>
           </p>
           <p>Or jump to another position in the current document:</p>
-          <pre><code>&lt;a href='<span>#tldr</span>'&gt;<span>Skip to the end</span>&lt;/a&gt;
+          <pre><code>&lt;a href="<span>#tldr</span>"&gt;<span>Skip to the end</span>&lt;/a&gt;
       
 ... Long Story ...
 
-&lt;p id='<span>tldr</span>'&gt;<span>The butler did it.</span>&lt;/p&gt;</code></pre>
+&lt;p id="<span>tldr</span>"&gt;<span>The butler did it.</span>&lt;/p&gt;</code></pre>
           <p>Or even send someone an email:</p>
-          <p><code>&lt;a href='<span>mailto:long.nguyenminh@rmit.edu.vn</span>'&gt;<span>Mail Me</span>&lt;/a&gt;</code>
+          <p><code>&lt;a href="<span>mailto:tri.dangtran@rmit.edu.vn</span>"&gt;<span>Mail Me</span>&lt;/a&gt;</code>
           </p>
-          <p><a href="mailto:long.nguyenminh@rmit.edu.vn">Mail Me</a></p>
+          <p><a href="mailto:tri.dangtran@rmit.edu.vn">Mail Me</a></p>
         </section>
 
       </section>
@@ -881,15 +881,15 @@
           <p>Let us not dwell too much on the details of this standard. <strong>Rules were strict!</strong></p>
           <ul>
             <li>All tags must be lowercase<br>
-              <code>&lt;a href='<span> ... </span>'&gt;</code> and <code>&lt;body&gt;</code></li>
+              <code>&lt;a href="<span> ... </span>"&gt;</code> and <code>&lt;body&gt;</code></li>
             <li>Tags must be closed, even the empty ones<br>
               eg <code>&lt;p&gt;<span> ... </span>&lt;/p&gt;</code> and <code>&lt;br <span>/</span>&gt;</code> etc</li>
             <li>Tags must be nested correctly<br>
               eg <code>&lt;strong&gt;<span>&lt;em&gt;<span> ... </span>&lt;/em&gt;</span>&lt;/strong&gt;</code> etc</li>
             <li>Attributes need a value in quotes, even when it is clear what they mean.<br>
-              eg <code>href='<span>http://google.com</span>'</code></li>
+              eg <code>href="<span>http://google.com</span>"</code></li>
             <li>Attributes need a value, even when the attribute makes it clear what is required<br>
-              eg <code>checked='<span>checked</span>'</code></li>
+              eg <code>checked="<span>checked</span>"</code></li>
           </ul>
           <p>Providing a simple <code>&lt;html&gt;</code> opening tag at the top of an XHTML document was no longer
             enough. We had to write this:</p>
@@ -949,9 +949,9 @@
           <ul>
             <li>Empty tags don't need a closing slash<br>eg <code>&lt;br <span>/</span>&gt;</code> can be written as
               <code>&lt;br&gt;</code></li>
-            <li>Values with no spaces don't need quotes<br>eg <code>value=<span>'</span>1<span>'</span></code> can be
+            <li>Values with no spaces don't need quotes<br>eg <code>value=<span>"</span>1<span>"</span></code> can be
               written as <code>value=1</code></li>
-            <li>"Obvious" attributes can be minimised<br>eg <code>selected<span>='selected'</span></code> can be written
+            <li>"Obvious" attributes can be minimised<br>eg <code>selected<span>="selected"</span></code> can be written
               as <code>selected</code></li>
           </ul>
           <p>The stylistic &lt;b&gt; and &lt;i&gt; were brought back into the standard with new / clarified semantic
@@ -1078,7 +1078,7 @@
   &lt;/tbody&gt;
   &lt;tfooter&gt;  
     <span>&lt;tr&gt;
-      &lt;th rowspan='3'&gt; ... &lt;/th&gt;
+      &lt;th rowspan="3"&gt; ... &lt;/th&gt;
     &lt;/tr&gt;</span>
   &lt;tfooter&gt;  
 &lt;/table&gt;</code></pre>
@@ -1322,7 +1322,7 @@
           </ul>
           <p>Think about your student ID. You should only have one, and no two students at RMIT should ever share the
             same SID:</p>
-          <p><code>&lt;p id='<span>s1234567'</span>&gt;There can only be one!&lt;/p&gt;</code></p>
+          <p><code>&lt;p id="<span>s1234567"</span>&gt;There can only be one!&lt;/p&gt;</code></p>
           <p>The <code>class</code> attribute, also optional, identifies a <strong>set</strong> of elements, and
             elements can belong to more than one class.</p>
           <ul>
@@ -1330,9 +1330,9 @@
             <li>Elements in a document can share the same class.</li>
           </ul>
           <p>Think about your classes and class-mates. Students should have many classes and many class-mates:</p>
-          <pre><code>&lt;p id='<span>s1234567'</span> class='<span>COSC2430 ISYS3414</span>'&gt;I know you from somewhere ...&lt;/p&gt;
-&lt;p id='<span>s1234568'</span> class='<span>COSC2430 ISYS3414</span>'&gt;We are in Intro to IT too&lt;/p&gt;
-&lt;p id='<span>s1234569'</span> class='<span>COSC2430 ISYS3414</span>'&gt;Don't forget BITS!&lt;/p&gt;</code></pre>
+          <pre><code>&lt;p id="<span>s1234567"</span> class="<span>COSC2430 ISYS3414</span>"&gt;I know you from somewhere ...&lt;/p&gt;
+&lt;p id="<span>s1234568"</span> class="<span>COSC2430 ISYS3414</span>"&gt;We are in Intro to IT too&lt;/p&gt;
+&lt;p id="<span>s1234569"</span> class="<span>COSC2430 ISYS3414</span>"&gt;Don't forget BITS!&lt;/p&gt;</code></pre>
           <p><i>The need for these identifying attributes will become clear when using <strong>CSS</strong> and
               <strong>javascript</strong>.</i></p>
         </section>
