@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Input</title>
+  </head>
+
+  <body>
+    <form method="get" action="some-file.html">
+      <div>
+        Text <input type="text" name="text_field">
+      </div>
+      <div>
+        Password <input type="password" name="password_field">
+      </div>
+      <div>
+        Hidden <input type="hidden" name="hidden_field" value="12345">
+      </div>
+      <div>
+        Radio <input type="radio" name="radio_contact" value="phone"> Phone
+        <input type="radio" name="radio_contact" value="email"> Email
+        <input type="radio" name="radio_contact" value="face-to-face"> Face to face
+      </div>
+      <div>
+        Checkbox <input type="checkbox" name="checkbox_time[]" value="morning"> Morning
+        <input type="checkbox" name="checkbox_time[]" value="noon"> Noon
+        <input type="checkbox" name="checkbox_time[]" value="evening"> Evening
+      </div>
+      <div>
+        File upload <input type="file" name="cv">
+      </div>
+      <div>
+        Button <input type="button" value="Nothing happens">
+      </div>
+      <div>
+        <input type="reset" value="Click to reset">
+        <input type="submit" value="Click to submit">
+      </div>
+    </form>
+  </body>
+</html>

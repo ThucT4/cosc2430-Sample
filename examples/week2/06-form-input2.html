@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Input</title>
+  </head>
+
+  <body>
+    <form method="get" action="some-file.html">
+      <div>
+        Select
+        <select name="title">
+          <option value="1">Mr.</option>
+          <option value="2">Mrs.</option>
+          <option value="3">Ms.</option>
+          <option value="4">Dr.</option>
+        </select>
+      </div>
+      <div>
+        Textarea <textarea name="message" rows="10" cols="40"></textarea>
+      </div>
+      <fieldset>
+        <legend>Use fieldset to group inputs</legend>
+        <div>
+          Input 1 <input type="text">
+        </div>
+        <div>
+          Input 2 <input type="text">
+        </div>
+      </fieldset>
+      <div>
+        <input type="reset" value="Click to reset">
+        <input type="submit" value="Click to submit">
+      </div>
+    </form>
+  </body>
+</html>
