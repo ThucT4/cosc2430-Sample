@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h2>Contact Us</h2>
+    <p>Use the form below to contact us</p>
+    <form method="get" action="exercise1.html">
+      <div class="form-row">
+        <div class="form-label">
+          <label for="purpose">Purpose of contact</label>
+        </div>
+        <div class="form-field">
+          <select id="purpose" name="purpose">
+            <option value="business">Business</option>
+            <option value="personal">Personal</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="name">Your name</label>
+        </div>
+        <div class="form-field">
+          <input required id="name" type="text" name="name" maxlength="50">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="email">Your email</label>
+        </div>
+        <div class="form-field">
+          <input required id="email" type="email" name="email">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="phone">Your phone</label>
+        </div>
+        <div class="form-field">
+          <input required id="phone" type="tel" name="phone" pattern="[0-9]{9,13}" title="Enter 9 to 13 digits">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label>Preferred contact method</label>
+        </div>
+        <div class="form-field">
+          <ul>
+            <li>
+              <input type="radio" id="contact_email" name="contact_method" value="email">
+              <label for="contact_email">Email</label>
+            </li>
+            <li>
+              <input type="radio" id="contact_phone" name="contact_method" value="phone">
+              <label for="contact_phone">Phone</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label>Contact day of week</label>
+        </div>
+        <div class="form-field">
+          <ol>
+            <li>
+              <input type="checkbox" id="contact_day_mon" name="contact_days[]" value="mon">
+              <label for="contact_day_mon">Monday</label>
+            </li>
+            <li>
+              <input type="checkbox" id="contact_day_tue" name="contact_days[]" value="tue">
+              <label for="contact_day_tue">Tuesday</label>
+            </li>
+            <li>
+              <input type="checkbox" id="contact_day_wed" name="contact_days[]" value="wed">
+              <label for="contact_day_wed">Wednesday</label>
+            </li>
+            <li>
+              <input type="checkbox" id="contact_day_thu" name="contact_days[]" value="thu">
+              <label for="contact_day_thu">Thursday</label>
+            </li>
+            <li>
+              <input type="checkbox" id="contact_day_fri" name="contact_days[]" value="fri">
+              <label for="contact_day_fri">Friday</label>
+            </li>
+            <li>
+              <input type="checkbox" id="contact_day_sat" name="contact_days[]" value="sat">
+              <label for="contact_day_sat">Saturday</label>
+            </li>
+            <li>
+              <input type="checkbox" id="contact_day_sun" name="contact_days[]" value="un">
+              <label for="contact_day_sun">Sunday</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-label">
+          <label for="message">Your message</label>
+        </div>
+        <div class="form-field">
+          <textarea cols="40" rows="10" required id="message" name="message"></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <input type="reset" value="   Clear   ">
+        <input type="submit" value="   Send   ">
+      </div>
+    </form>
+  </body>
+</html>
