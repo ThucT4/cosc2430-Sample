@@ -1,0 +1,55 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*
+ Use the hsl color model to easily set different shades
+ for the same main color (hue) 
+*/
+
+h1 {
+  color: hsl(0, 100%, 50%);
+  font-size: 40px;
+}
+
+h2 {
+  color: hsl(0, 80%, 50%);
+  font-size: 36px;
+}
+
+h3 {
+  color: hsl(0, 60%, 50%);
+  font-size: 32px;
+}
+
+header nav li.active {
+  background-color: beige;
+}
+
+header nav li.active a {
+  color: darkgreen;
+}
+
+header nav li:hover {
+  background-color: gold;
+}
+
+main > p {
+  font-weight: bolder;
+}
+
+.job-description > p {
+  font-style: italic;
+}
+
+#education tr:nth-child(2n) {
+  background-color: honeydew;
+}
+
+#education tr:nth-child(2n + 1) {
+  background-color: mistyrose;
+}
+
+#education tr:first-child {
+  background-color: orange;
+}
