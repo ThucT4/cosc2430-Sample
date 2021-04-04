@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    	p {
+        font-size: 1vw;
+      }
+      h1 {
+        color: #FF0000;
+        font-size: 20px;
+      }
+      h2 {
+        color: #FFFF00;
+        font-size: 16px;
+      }
+      h3 {
+        color: #0000FF;
+        font-size: 24px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+    <title>Accessibility / Usability</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">link 1</a></li>
+          <li><a href="#">link 2</a></li>
+          <li><a href="#">link 3</a></li>
+          <li><a href="#">link 4</a></li>
+          <li><a href="#">link 5</a></li>
+        </ul>
+      </nav>
+      <h1>
+        Page Title
+      </h1>
+      <h2>Heading 2 - 1</h2>
+      <p>Lorem ipsum dolor sit amet, est aeque <a href="#">One link</a> graeci imperdiet te, no liber voluptatibus vis. Vis tibique lobortis id. Fabellas explicari mei eu. Unum constituto cum cu, ei eos scripta periculis, noster ancillae at mel. Has habeo quando torquatos ut, possim fierent per ei, has cu discere saperet. Viris graeci commodo cu vim, legere <a href="#">Another link</a> gloriatur mel no, eos id liber ignota.</p>
+      <h2>Heading 2 - 2</h2>
+      <p>Ut eius commune noluisse qui. Cu sed tollit tibique, per omittam recusabo sententiae et, viderer platonem accommodare pro no. Ne nec moderatius consectetuer. Intellegat consetetur an ius, lorem aperiam cu ius.</p>
+      <h2>Heading 2 - 3</h2>
+      <p>Cum ut facer facete, id nam <a href="#">Third link</a> mundi alterum. His recteque consetetur ei, te qui summo petentium reformidans, ad porro affert necessitatibus vix. Eros vivendum duo ne, ius illum clita copiosae in. Idque disputando eos te, sit facilis scribentur an. Omnes altera imperdiet usu ut, ad eum duis latine intellegebat, ius prima molestiae ea. Te latine legimus luptatum per, mel fugit assentior signiferumque in, nonumy commune vel eu. Qui maiestatis sententiae an.</p>
+    </header>
+    <article>
+      <header>
+        <h3>
+          Use different background color and text color
+        </h3>
+      </header>
+      <p class="special">
+        In graeco vituperatoribus qui. Est at dolorem facilis insolens, an eum aeque aperiam. Ferri magna nec et. No propriae vituperatoribus vel, ea duo nibh vero. Ea probo mentitum mei.
+      </p>
+      <p>
+      The technologies we learn in this course<br>
+      <img src="technologies.png">
+      </p>
+    </article>
+
+    <section>
+      <h2>Below is a contact form</h2>
+      <form method="get" action="usability.html">
+        Your name <input type="text" name="name"><br>
+        Email <input type="text" name="email"><br>
+        Phone <input type="text" name="phone"><br>
+        Gender <input type="radio" name="gender" value="F"> F
+          <input type="radio" name="gender" value="M"> M<br>
+        Prefered contact <input type="text" name="prefered" placeholder="type phone or email"><br>
+        Time to call you
+          <input type="checkbox" name="checkbox_time[]" value="morning"> Morning
+          <input type="checkbox" name="checkbox_time[]" value="noon"> Noon
+          <input type="checkbox" name="checkbox_time[]" value="evening"> Evening<br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <footer>
+      Copyright Info
+    </footer>
+  </body>
+</html>
