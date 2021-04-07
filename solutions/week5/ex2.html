@@ -4,6 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Box Model</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      header {
+        background-color: orange;
+        height: 50px;
+        position: sticky;
+        top: 0;
+      }
+      footer {
+        background-color: seagreen;
+        height: 50px;
+        clear: both;
+      }
+      #left {
+        background-color: pink;
+        width: 30%;
+        min-width: 200px;
+        float: left;
+      }
+      #right {
+        background-color: powderblue;
+        width: 15%;
+        float: left;
+      }
+      main {
+        background-color: violet;
+        width: calc(100% - 15% - max(30%, 200px));
+        float: left;
+      }
+    </style>
   </head>
   <body>
     <header>
