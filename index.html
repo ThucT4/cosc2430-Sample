@@ -7116,9 +7116,16 @@ console.log(document.body.children[3].children[7].<span>id</span>);</code></pre>
             correct format of the input.
             HTML5’s new type and pattern attributes have made a lot of this redundant (now "built in" to the browser).
           </p>
-          <p>For this example, we are going to create a registration form for the "Project Steve" website:</p>
-          <p><a href="http://www.skeptical-science.com/science/project-steve"
-              target="_blank">http://www.skeptical-science.com/science/project-steve</a></p>
+          <p>As an example, we will create a form containing several fields. Users can submit the form if all fields 
+            have been filled correctly. Furthermore, incorrect fields are highlighted after submission to help users
+            know what's wrong and can update accordingly.</p>
+          <p><a target="_blank" href="https://github.com/TriDang/cosc2430/blob/main/examples/week6/form-validation.html">Go to form validation example</a>
+          </p>
+          <p>The validation function can <code>return false</code> to prevent the form from submitting data to the server.  
+            We call the validation function when the form gets submitted (i.e. onsubmit event)
+          </p>
+          <p><code>&lt;form obsubmit="return validation_funtion()"></code></p>
+          
         </section>
 
       </section>
@@ -7127,68 +7134,35 @@ console.log(document.body.children[3].children[7].<span>id</span>);</code></pre>
 
         <header>Form Validation</header>
         <section class="content">
-          <h1>Accessing Form Elements</h1>
-          <p>Open and examine the following website as we step through the following slides:</p>
-          <p><a href="http://titan.csit.rmit.edu.au/~e54061/wp/ProjectSteve.html"
-              target="_blank">http://titan.csit.rmit.edu.au/~e54061/wp/ProjectSteve.html</a></p>
-          <p>You will observe that the form has:</p>
-          <ul>
-            <li>A text field: <code>name='<span>name</span>'</code></li>
-            <li>Radio buttons: <code>name='<span>scientist</span>'</code></li>
-            <li>A PDF file: <code> name='<span>signDoc</span>'</code></li>
-            <li>A submit button: <code> // <span>no name</span> </code></li>
-          </ul>
-          <p>In the form tag, you can see that the form:</p>
-          <ul>
-            <li>Submits data to <strong>processing.php</strong>: <code>action='<span>.../processing.php</span>'</code>
-            </li>
-            <li>Uses the <strong>post</strong> method: <code>method='<span>post</span>'</code></li>
-            <li>Runs javascript whenever an <strong>onsubmit</strong> event is generated:
-              <code>onsubmit='<span>return formValidate();</span>'</code></li>
-            <li>Places the server response in a new tab (or window): <code>target='<span>_blank</span>'</code></li>
-          </ul>
-        </section>
-
-      </section>
-
-      <section>
-
-        <header>Form Validation</header>
-        <section class="content">
-          <h1>Field and Sub-Functions in Example</h1>
-          <p>There are a number of sub-fuctions present in this example:</p>
-          <ul>
-            <li><code>getid():</code> Developer is very lazy and wishes to avoid typing "document.getElementById()" all
-              the time.</li>
-            <li><code>clearErrors():</code> This function looks for all spans of class "error", makes them invisible and
-              resets any form fields to a normal style.</li>
-            <li><code>nameCheck():</code> Checks that the name is "Steve", <strong>or</strong> sets an error message and
-              styles the invalid name field if not.</li>
-            <li><code>scientistCheck():</code> Checks that the scientist button is selected, <strong>or</strong> sets an
-              error message and styles the invalid file field if not.</li>
-            <li><code>fileNameCheck():</code> Checks that there is a filename and that it is has a .pdf extension,
-              <strong>or</strong> sets an error message and styles the invalid file field if not.</li>
-          </ul>
-          <p>Note that each "field function" <code>nameCheck()</code>, <code>scientistCheck()</code>,
-            <code>fileNameCheck()</code> returns true if the field contains valid user input or false if not. This helps
-            the calling function to determine success or failure and perform a complete form validation.</p>
-        </section>
-
-      </section>
-
-      <section>
-
-        <header>Form Validation</header>
-        <section class="content">
-          <h1>Form Validation Function in Example</h1>
-          <p>One "master" form validation function <code>formValidate()</code> first calls <code>clearErrors()</code> to
-            reset any error messages and field styles, even if there aren't any, then calls each of the field functions
-            in turn.</p>
-          <p>Each time a "field function" returns false, an error counter is incremented. If the error count is zero,
-            submission of form data is allowed; however, if the error count is greater than zero, form submission to the
-            server is blocked and the user is asked to correct their errors.</p>
-          <p>Finally, this function retirns <strong>true</strong> or <strong>false</strong> to the
-            <strong>onsubmit</strong> event handler, which will either allow or block the form submission.</p>
+          <h1>Accessing & Styling Form Elements</h1>
+          <p>The easiest way to access form elements is to use their id</p>
+          <p><code>document.getElementById()</code></p>
+          <p>Then, the values of those elements can be retrieved by</p>
+          <p><code>the_element.value</code></p>
+          <p>CSS classes can be created for fields whose values are correct and incorrect to help users easily know what's wrong</p>
+          <p>
+            <code>
+              .success {
+                background-color: green;
+              }
+            </code>
+          </p>
+          <p>
+            <code>
+              .error {
+                background-color: red;
+              }
+            </code>
+          </p>
+          <p>
+            Based on validation results, classes can be added or removed from fields
+          </p>
+          <p>
+            <code>
+              element.classList.remove("error");
+              element.classList.add("success");
+            </code>
+          </p>
         </section>
 
       </section>
