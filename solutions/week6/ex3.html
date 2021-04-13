@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Calculator</title>
+    <title>Digital Clock</title>
     <style>
       div {
         margin: 20px;
@@ -13,6 +13,11 @@
         font-size: xx-large;
       }
     </style>
+    <script>
+      function qs(selector) {
+        return document.querySelector(selector);
+      }
+    </script>
   </head>
 
   <body>
@@ -20,7 +25,7 @@
       Your local time
     </div>
     <div>
-      <input type="button" value="Start">
+      <input id="timer_btn" type="button" value="Start">
     </div>
   </body>
 </html>
