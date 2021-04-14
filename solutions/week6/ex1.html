@@ -17,6 +17,31 @@
       function qs(selector) {
         return document.querySelector(selector);
       }
+
+      // combine four operations: +, -, *, and /
+      // into one function, and use a parameter to
+      // determine the required operation
+      function do_it(operation) {
+        let n1 = parseFloat(qs("#number1").value);
+        let n2 = parseFloat(qs("#number2").value);
+        switch (operation) {
+          case '+':
+            result = n1 + n2;
+            break;
+          case '-':
+            result = n1 - n2;
+            break;
+          case '*':
+            result = n1 * n2;
+            break;
+          case '/':
+            result = n1 / n2;
+            break;
+          default:
+            result = 'Invalid';
+        }
+        qs("#result").value = result;
+      }
     </script>
   </head>
 
@@ -31,10 +56,10 @@
       <input id="result" readonly type="number">
     </div>
     <div>
-      <input type="button" value=" + ">
-      <input type="button" value=" - ">
-      <input type="button" value=" * ">
-      <input type="button" value=" / ">
+      <input type="button" value=" + " onclick="do_it('+')">
+      <input type="button" value=" - " onclick="do_it('-')">
+      <input type="button" value=" * " onclick="do_it('*')">
+      <input type="button" value=" / " onclick="do_it('/')">
     </div>
   </body>
 </html>
