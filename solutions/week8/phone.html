@@ -18,9 +18,12 @@
     <script>
       btn = document.querySelector("#check_btn");
       btn.addEventListener("click", function (ev) {
-        pattern = new RegExp("Write your pattern here");
+        // landline number pattern
+        landline_pattern = /^0?[1-9][0-9]{1,2}[0-9]{7,8}$/;
+        // mobile number pattern
+        mobile_pattern = /^0[1-9][0-9][0-9]{7}$/;
         value = document.querySelector("#phone").value;
-        if (pattern.test(value)) {
+        if (landline_pattern.test(value) || mobile_pattern.test(value)) {
           alert("Valid phone");
         } else {
           alert("Invalid phone");

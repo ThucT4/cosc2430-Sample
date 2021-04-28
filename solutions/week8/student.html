@@ -32,19 +32,49 @@
     </div>
 
     <script>
+      students = [];
+
       add_btn = document.querySelector("#add_btn");
       add_btn.addEventListener("click", function (ev) {
-        // TODO: handling add button
+        // get fields' values
+        id = document.querySelector("#id").value;
+        name = document.querySelector("#name").value;
+
+        // add to student list
+        students.push({
+          "id": id,
+          "name": name
+        });
+
+        alert('Added');
       });
 
       view_btn = document.querySelector("#view_btn");
       view_btn.addEventListener("click", function (ev) {
-        // TODO: handling view button
+        msg = '';
+        for (let student of students) {
+          msg += student['id'] + ' - ' + student['name'] + '\n';
+        }
+        alert(msg);
       });
 
       delete_btn = document.querySelector("#delete_btn");
       delete_btn.addEventListener("click", function (ev) {
-        // TODO: handling delete button
+        // temporary student list
+        new_list = [];
+        delete_id = document.querySelector("#id").value;
+        for (let student of students) {
+          if (student['id'] != delete_id)  {
+            // copy current student to temporary student list
+            new_list.push({
+              "id": student['id'],
+              "name": student['name']
+            });
+          }
+        }
+        // update student list with the temporary list
+        students = new_list;
+        alert('Deleted');
       });
     </script>
   </body>
