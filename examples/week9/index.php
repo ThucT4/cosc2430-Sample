@@ -6,9 +6,10 @@
     <title>Server Date</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <h1>
     <?php
       echo date("Y-m-d");
     ?>
+    </h1>
   </body>
 </html>
