@@ -1,0 +1,57 @@
+@media only screen and (min-width: 1000px) {
+  /* Make profile and info div 50% width each  */
+  /* Float them to make them display on the same row */
+  #profile {
+    width: 50%;
+    float: left;
+  }
+
+  #info {
+    width: 50%;
+    float: left;
+  }
+
+  /* Clear the float to return to normal flow */
+  h3 {
+    clear: both;
+  }
+
+  /* Make select an inline field to display on the same row as submit button */
+  #fields select {
+    display: inline;
+  }
+}
+
+/* display:block positions an element on its own row */
+#fields select {
+  display: block;
+}
+
+/* Color for full name */
+/* Assume my student id is s123456 */
+/* Then the last 2 digits are 56 */
+/* Use whatever values for the first 4 digits (red and green) */
+#info h2 {
+  color: #111156;
+}
+
+/* Color for full name when being hovered */
+/* Replace 56 by 12 (my id first 2 digits) */
+#info h2:hover {
+  color: #ffff12;
+}
+
+/* Bold text for heading row */
+table tr:first-child {
+  font-weight: bold;
+}
+
+/* student id for odd rows' background color */
+table tr:nth-child(2n + 1) {
+  background-color: #123456;
+}
+
+/* any background color for even rows */
+table tr:nth-child(2n) {
+  background-color: azure;
+}
