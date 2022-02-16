@@ -1,2 +1,2 @@
-# cosc2430
-COSC2430 - Web Programming @ RMIT VN
+# COSC2430
+Online slides for the course COSC2430 - Web Programming @ RMIT VN
