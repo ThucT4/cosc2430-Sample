@@ -8266,11 +8266,11 @@ var coffee = sessionStorage['<span>coffee</span>'];</code></pre>
             <li>Image</li>
             <li>Alert</li>
             <li>Breadcrumb</li>
-            <li>Button</li>
-            <li>Carousel</li>
-            <li>Navbar</li>
+            <li>Button</li>            
             <li>Pagination</li>
             <li>Modal</li>
+            <li>Carousel</li>
+            <li>Navbar</li>
           </ul>
         </section>
       </section>
@@ -8398,6 +8398,59 @@ var coffee = sessionStorage['<span>coffee</span>'];</code></pre>
             <img src="img/bs-button.png" alt="bootstrap component - button">
           </p>
         </section>
+      </section>     
+
+      <section class="key">
+        <header>Components</header>
+        <section class="content">
+          <h1>Pagination</h1>
+          <p>
+            When the content is too much to fit on one page, use pagination to support users in accesing the required part
+          </p>
+          <p>
+            The list of pages can be created by using a list (ordered or unordered)
+          </p>
+          <p>
+            Use HTML <strong><code>nav</code></strong> element to wrap around the ordered/unordered list. This semantic element lets browsers understand that those links are for navigation
+          </p>
+          <p>
+            Assign the base class <strong><code>pagination</code></strong> to the HTML list element. The specific classes <strong><code>pagination-lg</code></strong>, <strong><code>pagination-sm</code></strong> can be used to set a desired size for the pagination. For each list item, use the class <strong><code>page-item</code></strong>. The anchor <strong><code>a</code></strong> elements inside list items have their class as <strong><code>page-link</code></strong>
+          </p>
+          <p>
+            By default, a pagination is left-aligned. You can change its alignment by applying the classes <strong><code>justify-content-center</code></strong> or <strong><code>justify-content-end</code></strong>
+          </p>
+          <p>
+            Make a pagination item the current one with the class <strong><code>active</code></strong>
+          </p>
+          <p>
+            <img src="img/bs-pagination.png" alt="bootstrap component - pagination">
+          </p>
+        </section>
+      </section>
+
+      <section class="key">
+        <header>Components</header>
+        <section class="content">
+          <h1>Modal</h1>
+          <p>
+            Use the modal component to grab users' attention. When a modal is being displayed, the rest of the page is inactive until the modal is closed. Modals are independent and cannot be nested inside each other
+          </p>
+          <p>
+            The list of pages can be created by using a list (ordered or unordered)
+          </p>
+          <p>
+            The outer most class of a modal is <strong><code>modal</code></strong>. Directly inside it is an element whose class is <strong><code>modal-dialog</code></strong>, which in turn directly contains another element <strong><code>modal-content</code></strong>. There are 3 children inside  <strong><code>modal-content</code></strong>: <strong><code>modal-header</code></strong>, <strong><code>modal-body</code></strong>, and <strong><code>modal-footer</code></strong>
+          </p>
+          <p>
+            Users can click on a point outside the modal to close it. You can also add a <strong>close</strong> button to the modal by assigning to its attribute <strong><code>data-bs-dismiss</code></strong> a value of <strong>modal</strong>
+          </p>
+          <p>
+            By default, a modal is not displayed. To display it, for example, you can create a close button, assign to the buton's custom attribute <strong><code>data-bs-toggle</code></strong> as <strong>modal</strong>, and the attribute <strong><code>data-bs-target</code></strong> as the id of the modal
+          </p>
+          <p>
+            <img src="img/bs-modal.png" alt="bootstrap component - modal">
+          </p>
+        </section>
       </section>
 
       <section class="key">
@@ -8450,59 +8503,6 @@ var coffee = sessionStorage['<span>coffee</span>'];</code></pre>
           </p>
           <p>
             <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">More information about aria attributes</a>
-          </p>
-        </section>
-      </section>
-
-      <section class="key">
-        <header>Components</header>
-        <section class="content">
-          <h1>Pagination</h1>
-          <p>
-            When the content is too much to fit on one page, use pagination to support users in accesing the required part
-          </p>
-          <p>
-            The list of pages can be created by using a list (ordered or unordered)
-          </p>
-          <p>
-            Use HTML <strong><code>nav</code></strong> element to wrap around the ordered/unordered list. This semantic element lets browsers understand that those links are for navigation
-          </p>
-          <p>
-            Assign the base class <strong><code>pagination</code></strong> to the HTML list element. The specific classes <strong><code>pagination-lg</code></strong>, <strong><code>pagination-sm</code></strong> can be used to set a desired size for the pagination. For each list item, use the class <strong><code>page-item</code></strong>. The anchor <strong><code>a</code></strong> elements inside list items have their class as <strong><code>page-link</code></strong>
-          </p>
-          <p>
-            By default, a pagination is left-aligned. You can change its alignment by applying the classes <strong><code>justify-content-center</code></strong> or <strong><code>justify-content-end</code></strong>
-          </p>
-          <p>
-            Make a pagination item the current one with the class <strong><code>active</code></strong>
-          </p>
-          <p>
-            <img src="img/bs-pagination.png" alt="bootstrap component - pagination">
-          </p>
-        </section>
-      </section>
-
-      <section class="key">
-        <header>Components</header>
-        <section class="content">
-          <h1>Modal</h1>
-          <p>
-            Use the modal component to grab users' attention. When a modal is being displayed, the rest of the page is inactive until the modal is closed. Modals are independent and cannot be nested inside each other
-          </p>
-          <p>
-            The list of pages can be created by using a list (ordered or unordered)
-          </p>
-          <p>
-            The outer most class of a modal is <strong><code>modal</code></strong>. Directly inside it is an element whose class is <strong><code>modal-dialog</code></strong>, which in turn directly contains another element <strong><code>modal-content</code></strong>. There are 3 children inside  <strong><code>modal-content</code></strong>: <strong><code>modal-header</code></strong>, <strong><code>modal-body</code></strong>, and <strong><code>modal-footer</code></strong>
-          </p>
-          <p>
-            Users can click on a point outside the modal to close it. You can also add a <strong>close</strong> button to the modal by assigning to its attribute <strong><code>data-bs-dismiss</code></strong> a value of <strong>modal</strong>
-          </p>
-          <p>
-            By default, a modal is not displayed. To display it, for example, you can create a close button, assign to the buton's custom attribute <strong><code>data-bs-toggle</code></strong> as <strong>modal</strong>, and the attribute <strong><code>data-bs-target</code></strong> as the id of the modal
-          </p>
-          <p>
-            <img src="img/bs-modal.png" alt="bootstrap component - modal">
           </p>
         </section>
       </section>
