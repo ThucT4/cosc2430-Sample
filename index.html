@@ -910,9 +910,6 @@
       </section>
 
       <section>
-
-
-
         <header>HTML5</header>
         <section class="content">
           <h1>New Elements and Attributes</h1>
@@ -935,11 +932,9 @@
             <li>HTML5: A time of realism, sensible rules retained, new semantic elements to help search engine(s).</li>
           </ul>
         </section>
-
       </section>
 
       <section class="key" id="tp-htmlelements">
-
         <header>HTML Elements</header>
         <section class="content">
           <h1>A First Webpage</h1>
@@ -986,8 +981,28 @@
 &lt;/html&gt;</textarea><br><input type="button" value="Try it">
           </div>
         </section>
-
       </section>
+
+      <section>
+        <header>HTML Elements</header>
+        <section class="content">
+          <p>The roles of elements used on previous example</p>
+          <ul>
+            <li><strong><code>!doctype</code></strong> tell the browser what type this document is</li>
+            <li><strong><code>html</code></strong> the root element of all html documents</li>
+            <li><strong><code>head</code></strong> information about this html page</li>
+            <li><strong><code>body</code></strong> actual content of the page</li>
+            <li><strong><code>h1, h2, ...., h6</code></strong> heading text of different levels</li>
+            <li><strong><code>p</code></strong> paragraph of text</li>
+            <li><strong><code>hr</code></strong> horizontal line</li>
+            <li><strong><code>dl, dt, dd</code></strong> data list consiting of data terms and data description</li>
+            <li><strong><code>ul, li</code></strong> unordered list consisting of list items</li>
+            <li><strong><code>b, i</code></strong> make a segment of text bold, italic (avoid using them as much as possible)</li>
+            <li><strong><code>em, strong</code></strong> mark a segment of text as emphasized, important</li>
+          </ul>
+        </section>
+      </section>
+
       <section>
         <header>HTML Elements</header>
         <section class="content">
@@ -1024,9 +1039,6 @@
       </section>
 
       <section>
-
-
-
         <header>HTML Elements</header>
         <section class="content">
           <h1>Table Example</h1>
@@ -8156,10 +8168,7 @@ var coffee = sessionStorage['<span>coffee</span>'];</code></pre>
             Form controls (like text, textarea, radio buttons, etc.) are used to receive input from visitors
           </p>
           <p>
-            Assign the base class <strong><code>.form-control</code></strong> to those controls. Specific classes <strong><code>.form-control-lg</code></strong> and <strong><code>.form-control-sm</code></strong> can be used additionally to adjust the controls' sizes
-          </p>
-          <p>
-            Use the specific class <strong><code>.form-control-color</code></strong> for a color picker element
+            Assign the base class <strong><code>.form-control</code></strong> to text and textarea. Specific classes <strong><code>.form-control-lg</code></strong> and <strong><code>.form-control-sm</code></strong> can be used additionally to adjust the controls' sizes
           </p>
           <p>
             <img src="img/form-textarea.png" alt="bootstrap textarea control">
@@ -8180,20 +8189,326 @@ var coffee = sessionStorage['<span>coffee</span>'];</code></pre>
         </section>
       </section>
 
+      <section class="key">
+        <header>Forms</header>
+        <section class="content">
+          <h1>Checkboxes and radios</h1>
+          <p>
+            Checkboxes and radios are used to select/unselect options
+          </p>
+          <ul>
+            <li>Use checkboxes to select zero, one, or more options</li>
+            <li>Use radios to select exactly one option from a collection</li>
+          </ul>
+          <p>
+            To use checkboxes and radios with Bootstrap:
+          </p>
+          <ul>
+            <li>Wrap the checkbox/radio and its label inside a container whose class is <strong><code>.form-check</code></strong></li>
+            <li>Use the class <strong><code>.form-check-input</code></strong> for the checkbox/radio</li>
+            <li>Use the class <strong><code>.form-check-label</code></strong> for the label</li>
+          </ul>
+          <p>
+            <img src="img/bs-check-radio.png" alt="bootstrap checkbox and radio">
+          </p>
+        </section>
+      </section>
+
+      <section class="key">
+        <header>Forms</header>
+        <section class="content">
+          <h1>Checkboxes and radios</h1>
+          <p>
+            By default, checkboxes and radios are displayed on top of each other (vertically stacked)
+          </p>
+          <p>
+            To display them next to each other horizontally, add the specific class <strong><code>.form-check-inline</code></strong>
+          </p>
+          <p>
+            <img src="img/bs-checbox2.png" alt="bootstrap inline and switch checkboxes">
+          </p>
+        </section>
+      </section>
+
+      <section class="key">
+        <header>Forms</header>
+        <section class="content">
+          <h1>Input group</h1>
+          <p>
+            Use input group to add text to the left or right of text field, file upload, or select
+          </p>
+          <p>
+            Put the control and its descriptive text inside a container whose class is <strong><code>.input-group</code></strong>
+          </p>
+          <p>
+            Then assign the class <strong><code>.input-group-text</code></strong> to the descriptive text. The descriptive text is wrapped inside a <strong><code>span</code></strong> element
+          </p>
+          <p>
+            <img src="img/bs-input-group.png" alt="bootstrap input group">
+          </p>
+        </section>
+      </section>
+
       <section class="key" id="tp-bs-components">
         <header>Components</header>
         <section class="content">
-          <h1>Why Care About Users?</h1>
+          <h1>Bootstrap components</h1>
+          <p>
+            Bootstrap provides many CSS classes for popular components. It allows web developers to integrate those components quickly into their new or existing projects. Using those built-in components also ensure the consistency of looks and behaviors
+          </p>
+          <p>
+            We will not cover all Bootstrap's components here. You are encouraged to use the <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">Bootstrap documentation site</a> for more detailed technical specs
+          </p>
+          <p>
+            Some components we will review
+          </p>
           <ul>
-            <li>What is wrong?</li>
-            <li>Why is it wrong?</li>
-            <li>What can be done to prevent these kinds of mismatches?</li>
+            <li>Table</li>
+            <li>Image</li>
+            <li>Alert</li>
+            <li>Breadcrumb</li>
+            <li>Button</li>            
+            <li>Pagination</li>
+            <li>Modal</li>
+            <li>Carousel</li>
+            <li>Navbar</li>
           </ul>
         </section>
       </section>
 
-    </article>
+      <section class="key">
+        <header>Components</header>
+        <section class="content">
+          <h1>Table</h1>
+          <p>
+            Use standard HTML table elements and add the base class <strong><code>.table</code></strong> to create the basic table style
+          </p>
+          <p>
+            The specific classes <strong><code>.table-primary</code></strong>, <strong><code>.table-success</code></strong>, etc. can be added to table, row, or cell elements (td and th) to add contextual styles to that element
+          </p>
+          <p>
+            The specific class <strong><code>.table-striped</code></strong> alternates colors between consecutive rows
+          </p>
+          <p>
+            Add the specific class <strong><code>.table-hover</code></strong> to create hover effect on the table
+          </p>
+          <p>
+            Add the specific class <strong><code>.table-responsive</code></strong> to allow horizontal scrolling
+          </p>
+          <p>
+            To add border to tables, use <strong><code>.table-bordered</code></strong> to allow horizontal scrolling
+          </p>
+          <p>
+            <img src="img/bs-table.png" alt="bootstrap component - table">
+          </p>
+        </section>
+      </section>
 
+      <section class="key">
+        <header>Components</header>
+        <section class="content">
+          <h1>Image</h1>
+          <p>
+            Use <strong><code>img</code></strong> elemelent to insert images as usual
+          </p>
+          <p>
+            To make images' widths extend to the full width of their parent elements, add the class <strong><code>.img-fluid</code></strong> to the image tag
+          </p>
+          <p>
+            To make rounded corners around image, use the class <strong><code>.rounded</code></strong> or <strong><code>.rounded-circle</code></strong>
+          </p>
+          <p>
+            Add a border to an image with the class <strong><code>.img-thumbnail</code></strong>
+          </p>
+          <p>
+            Align images to the left with <strong><code>.float-start</code></strong> and to the right with <strong><code>.float-end</code></strong>
+          </p>
+          <p>
+            <img src="img/bs-image.png" alt="bootstrap component - image">
+          </p>
+        </section>
+      </section>
+
+      <section class="key">
+        <header>Components</header>
+        <section class="content">
+          <h1>Alert</h1>
+          <p>
+            Alert is a component that you use to provide feedback to users. Choose alert styles depending on the types of feedback (e.g., positive, negative, etc.) you want to communicate with users
+          </p>
+          <p>
+            Use <strong><code>alert</code></strong> base class to create an alert
+          </p>
+          <p>
+            Specific classes for alert are <strong><code>alert-primary</code></strong>, <strong><code>alert-secondary</code></strong>, <strong><code>alert-success</code></strong>, <strong><code>alert-danger</code></strong>, <strong><code>alert-warning</code></strong>, <strong><code>alert-info</code></strong>, <strong><code>alert-light</code></strong>, and <strong><code>alert-dark</code></strong>
+          </p>
+          <p>
+            To show/hide alerts dynamically, use Javascript
+          </p>
+          <p>
+            To add a Close button to an alert, add <strong><code>alert-dismissible</code></strong> class to the alert and set the value of the close button's <strong><code></code>data-bs-dismiss</code></strong> attribute to <strong>alert</strong>
+          </p>
+          <p>
+            <img src="img/bs-alert.png" alt="bootstrap component - alert">
+          </p>
+        </section>
+      </section>
+
+      <section class="key">
+        <header>Components</header>
+        <section class="content">
+          <h1>Breadcrumb</h1>
+          <p>
+            Use the breadcrumb component to show the current position of a user on your website. That makes navigating around your website easier
+          </p>
+          <p>
+            A breadcrumb is created by using an ordered or unordered list with its class attribute set as <strong>breadcrumb</strong>
+          </p>
+          <p>
+            Each element on the breadcrumb is a list item <strong><code>li</code></strong>. The class attribute of those items is set as <strong>breadcrumb-item</strong>
+          </p>
+          <p>
+            The current list item (i.e., the page that is being accessed now) has its class attribute <strong>active</strong>.
+          </p>
+          <p>
+            The breadcrumb divider is used to separate breadcrumbs' list items. It can be changed by setting the custom CSS propery <strong><code>--bs-breadcrumb-divider</code></strong>
+          </p>
+          <p>
+            <img src="img/bs-breadcrumb.png" alt="bootstrap component - breadcrumb">
+          </p>
+        </section>
+      </section>
+
+      <section class="key">
+        <header>Components</header>
+        <section class="content">
+          <h1>Button</h1>
+          <p>
+            You can create buttons not only with <strong><code>button</code></strong> element but also with <strong><code>a</code></strong> and <strong><code>input</code></strong> elements. The base class for button is <strong><code>btn</code></strong>
+          </p>
+          <p>
+            Specific button styles include <strong><code>btn-primary</code></strong>, <strong><code>btn-secondary</code></strong>, <strong><code>btn-success</code></strong>, <strong><code>btn-danger</code></strong>, <strong><code>btn-warning</code></strong>, <strong><code>btn-info</code></strong>, <strong><code>btn-light</code></strong>, <strong><code>btn-dark</code></strong> and <strong><code>btn-link</code></strong>
+          </p>
+          <p>
+            Buttons can be made larger or smaller with classes <strong><code>btn-lg</code></strong> and <strong><code>btn-sm</code></strong>
+          </p>
+          <p>
+            To create an outline button instead of a solid one, change the specific class <strong><code>btn-something</code></strong> to <strong><code>btn-outline-something</code></strong>, for example <strong><code>btn-outline-primary</code></strong>
+          </p>
+          <p>
+            <img src="img/bs-button.png" alt="bootstrap component - button">
+          </p>
+        </section>
+      </section>     
+
+      <section class="key">
+        <header>Components</header>
+        <section class="content">
+          <h1>Pagination</h1>
+          <p>
+            When the content is too much to fit on one page, use pagination to support users in accesing the required part
+          </p>
+          <p>
+            The list of pages can be created by using a list (ordered or unordered)
+          </p>
+          <p>
+            Use HTML <strong><code>nav</code></strong> element to wrap around the ordered/unordered list. This semantic element lets browsers understand that those links are for navigation
+          </p>
+          <p>
+            Assign the base class <strong><code>pagination</code></strong> to the HTML list element. The specific classes <strong><code>pagination-lg</code></strong>, <strong><code>pagination-sm</code></strong> can be used to set a desired size for the pagination. For each list item, use the class <strong><code>page-item</code></strong>. The anchor <strong><code>a</code></strong> elements inside list items have their class as <strong><code>page-link</code></strong>
+          </p>
+          <p>
+            By default, a pagination is left-aligned. You can change its alignment by applying the classes <strong><code>justify-content-center</code></strong> or <strong><code>justify-content-end</code></strong>
+          </p>
+          <p>
+            Make a pagination item the current one with the class <strong><code>active</code></strong>
+          </p>
+          <p>
+            <img src="img/bs-pagination.png" alt="bootstrap component - pagination">
+          </p>
+        </section>
+      </section>
+
+      <section class="key">
+        <header>Components</header>
+        <section class="content">
+          <h1>Modal</h1>
+          <p>
+            Use the modal component to grab users' attention. When a modal is being displayed, the rest of the page is inactive until the modal is closed. Modals are independent and cannot be nested inside each other
+          </p>
+          <p>
+            The list of pages can be created by using a list (ordered or unordered)
+          </p>
+          <p>
+            The outer most class of a modal is <strong><code>modal</code></strong>. Directly inside it is an element whose class is <strong><code>modal-dialog</code></strong>, which in turn directly contains another element <strong><code>modal-content</code></strong>. There are 3 children inside  <strong><code>modal-content</code></strong>: <strong><code>modal-header</code></strong>, <strong><code>modal-body</code></strong>, and <strong><code>modal-footer</code></strong>
+          </p>
+          <p>
+            Users can click on a point outside the modal to close it. You can also add a <strong>close</strong> button to the modal by assigning to its attribute <strong><code>data-bs-dismiss</code></strong> a value of <strong>modal</strong>
+          </p>
+          <p>
+            By default, a modal is not displayed. To display it, for example, you can create a close button, assign to the buton's custom attribute <strong><code>data-bs-toggle</code></strong> as <strong>modal</strong>, and the attribute <strong><code>data-bs-target</code></strong> as the id of the modal
+          </p>
+          <p>
+            <img src="img/bs-modal.png" alt="bootstrap component - modal">
+          </p>
+        </section>
+      </section>
+
+      <section class="key">
+        <header>Components</header>
+        <section class="content">
+          <h1>Carousel</h1>
+          <p>
+            Carousel is a component that creates a slideshow effect. It consists of several slides and each slide can have text, images, and HTML code
+          </p>
+          <p>
+            Each carousel (the outer most element) must have a unique id within the page. The base class <strong><code>carousel</code></strong> is also needed. By default, slides appears/disappears. To make the slide transition smooth, add the class <strong><code>slide</code></strong>. The custom attribute <strong><code>data-bs-ride</code></strong> is used to slide between items automatically
+          </p>
+          <p>
+            Previous and Next buttons can be added to carousels. Use the classes <strong><code>carousel-control-prev</code></strong> and <strong><code>carousel-control-next</code></strong> for them. For those buttons, the custom attribute <strong>data-bs-target</strong> must store the carousel id. In addition the custom attribute <strong><code>data-bs-slide</code></strong> is used to set the actual slide direction.<br>            
+            The classes <strong><code>carousel-control-prev-icon</code></strong> and <strong><code>carousel-control-prev-icon</code></strong> are used to display the Previous and Next icons on the button
+          </p>          
+          <p>
+            <img src="img/bs-carousel.png" alt="bootstrap component - carousel">
+          </p>
+          <p>
+            <a href="https://getbootstrap.com/docs/5.1/components/carousel/">More detailed about Bootstrap Carousel component on the official site</a>
+          </p>
+        </section>
+      </section>
+
+      <section class="key">
+        <header>Components</header>
+        <section class="content">
+          <h1>Navbar</h1>
+          <p>
+            Use navbar component to support users in navigating around your website
+          </p>
+          <p>
+            The base class for navbar is <strong><code>navbar</code></strong>
+          </p>
+          <p>
+            Use <strong><code>navbar-light</code></strong> or <strong><code>navbar-dark</code></strong> to style navbar, together with background color classes such as <strong><code>bg-primary</code></strong>, <strong><code>bg-dark</code></strong>, etc.
+          </p>
+          <p>
+            Navbar content can be created with an unordered list. The class for the list is <strong><code>navbar-nav</code></strong> and the class for the list item is <strong><code>nav-item</code></strong>. Inside nav item, insert anchor element with the class <strong><code>nav-link</code></strong>. Use the class <strong><code>active</code></strong> for current page, together with the attribute <strong><code>aria-current</code></strong>
+          </p>
+          <p>
+            To create a responsive navbar, use the class <strong><code>navbar-toggler</code></strong> and point to the respective navbar with its attribute <strong><code>data-bs-target</code></strong>. This will show a navbar toggler button when the screen width is small enough
+          </p>
+          <p>
+            <img src="img/bs-navbar.png" alt="bootstrap component - navbar">
+          </p>
+          <p>
+            <a href="https://getbootstrap.com/docs/5.1/components/navbar/">More detailed about Bootstrap Navbar</a>
+          </p>
+          <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">More information about aria attributes</a>
+          </p>
+        </section>
+      </section>
+
+    </article>
 
     <!--Lecture 8-->
 
