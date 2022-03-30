@@ -10673,6 +10673,7 @@ else
             <li><a href="#tp-phpregexp">PHP Regular Expressions</a>
             </li>
             <li><a href="#tp-mainstate">Maintaining State</a></li>
+            <li><a href="#tp-logioex">Log In and Out Example</a></li>
             <li><a href="#tp-filehand">File Handling</a></li>
             <li><a href="#tp-handdelim">Handling Delimited Data</a>
             </li>
@@ -11083,6 +11084,96 @@ echo $_COOKIE["<span>firstname</span>"];</code></pre>
             <p>If the client refreshes the page (ie makes another request), then the value of the <code>$_COOKIE</code>
               variable will become "Bob".</p>
           </details>
+        </section>
+      </section>
+
+      <section class="key" id="tp-logioex">
+
+        <header>Log In and Out Example</header>
+        <section class="content">
+          <h2>Introduction</h2>
+          <p>The next few slides will look at creating a simple log in and log out script that is present on every page
+            as part of a "topModule" script.</p>
+          <p>We will need to create two "sibling" forms, each submitting to a processing script called
+            <code>logIO.php</code> with a submit button with the name <code>logIO</code>:</p>
+          <pre><code>&lt;form action="<span>logIO.php</span>"&gt;
+  ...
+  ...
+  &lt;button name="<span>logIO</span>"&gt; ... &lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        </section>
+
+      </section>
+
+      <section>
+
+        <header>Log In and Out Example</header>
+        <section class="content">
+          <h2>Sibling Forms Detail</h2>
+          <p>A very trimmed down version of both forms are below to get you started. Many form elements and field
+            attributes you would expect to see are either missing or slightly mangled.</p>
+          <h3>Log In Version:</h3>
+          <pre><code>&lt;form action="<span>logIO.php</span>"&gt;
+  &lt;label&gt;Sign in as&lt;/label&gt;
+  &lt;input type=text name=<span>fname</span>&gt;
+  &lt;button name=<span>logIO</span>&gt;Log In&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+          <h3>Log Out Version:</h3>
+          <pre><code>&lt;form action="<span>logIO.php</span>"&gt;
+  &lt;span&gt;Logged in as &lt;?= <span>$_SESSION["user"]["fname"]</span> ?&gt;&lt;span&gt;
+  &lt;button name=<span>logIO</span>&gt;Log Out&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        </section>
+
+      </section>
+
+      <section>
+
+        <header>Log In and Out Example</header>
+        <section class="content">
+          <h2>Display Logic: SESSION check</h2>
+          <p>In order to decide which form to display in the <code>topModule</code> function, we will check to see if a
+            variable called <code>$_SESSION['user']</code> exists:</p>
+          <pre><code>session_start();
+...
+if (isset($_SESSION["<span>user</span>"])) {
+  <span><span>// show logout version</span></span>
+} else {
+  <span><span>// show login version</span></span>
+}
+...</code></pre>
+          <p>It is left to the reader to complete this step.</p>
+          <p><strong>Tip:</strong> If you are duplicating form code, you are doing it <del>wrong</del> not quite right!
+          </p>
+        </section>
+
+      </section>
+
+      <section>
+
+        <header>Log In and Out Example</header>
+        <section class="content">
+          <h2>Processing Logic: SESSION and POST check</h2>
+          <p>A very trimmed down processing script called <code>logIO.php</code> is below.</p>
+          <p>Only a submit button name is checked. Your script should check more than just one form field.</p>
+          <pre><code>  session_start();
+<span><span>// User should only get here if a logIO button is clicked</span></span>
+  if (isset($_POST["<span>logIO</span>"])) {
+<span><span>// If user is currently logged in, log them out</span></span>
+    if (isset($_SESSION["<span>user</span>"])) {
+      unset($_SESSION["<span>user</span>"]);
+<span><span>// User not logged in, make sure fname field is not blank.</span></span>
+    } else if (!empty($_POST["<span>fname</span>"])) {
+<span><span>// Log the user in, make sure fname is clean.</span></span>
+      $_SESSION["<span>user</span>"]["<span>fname</span>"] = htmlentities($_POST["<span>fname</span>"], ENT_QUOTES);
+    }
+<span><span>// Transfer user back to the referring page</span></span>
+    header("Location: ".$_SERVER["<span>HTTP_REFERER</span>"]);
+  } else {
+<span><span>// User got here by not clicking a logIO button, forward them "silently" to the home page.</span></span>
+    header("Location: <span>index.php</span>");
+  }
+</code></pre>
         </section>
 
       </section>
