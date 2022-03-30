@@ -9570,9 +9570,42 @@ OUTPUT;
             <div>For example, this will not detect a <code>E_DEPRECATED</code> or <code>8192</code> error. This means
               that your code works now, but it will stop working in the near future.</div>
           </details>
-
         </section>
+      </section>
 
+      <section>
+        <header>Error Reporting and Handling</header>
+        <section class="content">
+          <h2>PHP exit() and die()</h2>
+          <p>The PHP functions <code>exit()</code> and <code>die()</code> are equivalent and take an optional message
+            string as a parameter. Execution is halted and the message, if supplied, is printed to the screen.</p>
+          <pre><code>exit(); <span><span>// Not very informative</span></span>
+exit("<span>An error has occurred. Exiting!</span>");
+die("<span>AARRRGG!! I love being dramatic!!</span>");</code></pre>
+          <p>This approach is good for immediate debugging, but is not suitable for the end user experience on a
+            production server.</p>
+          <pre><code>if( !file_exists("") ) {
+  exit("<span>File not found on line 145: customers.txt. Hope you weren't buying anything ...</span>");
+} else {
+  $file = fopen("customers.txt, "r");
+  <span><span>// rest of code here</span></span></code></pre>
+        </section>
+      </section>
+
+      <section>
+        <header>Error Reporting and Handling</header>
+        <section class="content">
+          <h2>Try Catch Block</h2>
+          <p>A more elegant way of handling errors is to <code>try</code> code, <code>catch</code> errors and
+            <code>throw</code> exceptions in a <strong>try catch</strong> block.</p>
+          <pre><code><span>try</span> {
+  if ($a == 0)
+    <span>throw</span> new Exception ("Can't divide by 0");
+  return $b / $a;
+} <span>catch</span> (Exception $e) {
+  return "Exception: ".$e-&gt;getMessage();
+}</code></pre>
+        </section>
       </section>
 
     </article>
