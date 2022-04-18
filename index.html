@@ -8011,7 +8011,7 @@ var coffee = sessionStorage['<span>coffee</span>'];</code></pre>
             When using Bootstrap, you assign appropriate predefined classes to each element to set its desired look and behavior
           </p>
           <p>
-            Sometimes, you mayy need to assign a base class to an element, then modify its specific style with more specific classes. For example:
+            Sometimes, you may need to assign a base class to an element, then modify its specific style with more specific classes. For example:
           </p>
           <ul>
             <li>Base button class: <strong><code>btn</code></strong></li>
@@ -8285,7 +8285,7 @@ var coffee = sessionStorage['<span>coffee</span>'];</code></pre>
             Add the specific class <strong><code>.table-responsive</code></strong> to allow horizontal scrolling
           </p>
           <p>
-            To add border to tables, use <strong><code>.table-bordered</code></strong> to allow horizontal scrolling
+            To add border to tables, use <strong><code>.table-bordered</code></strong>
           </p>
           <p>
             <img src="img/bs-table.png" alt="bootstrap component - table">
@@ -8335,7 +8335,7 @@ var coffee = sessionStorage['<span>coffee</span>'];</code></pre>
             To show/hide alerts dynamically, use Javascript
           </p>
           <p>
-            To add a Close button to an alert, add <strong><code>alert-dismissible</code></strong> class to the alert and set the value of the close button's <strong><code></code>data-bs-dismiss</code></strong> attribute to <strong>alert</strong>
+            To add a Close button to an alert, add <strong><code>alert-dismissible</code></strong> class to the alert and set the value of the close button's <strong><code>data-bs-dismiss</code></strong> attribute to <strong>alert</strong>
           </p>
           <p>
             <img src="img/bs-alert.png" alt="bootstrap component - alert">
@@ -8426,16 +8426,13 @@ var coffee = sessionStorage['<span>coffee</span>'];</code></pre>
             Use the modal component to grab users' attention. When a modal is being displayed, the rest of the page is inactive until the modal is closed. Modals are independent and cannot be nested inside each other
           </p>
           <p>
-            The list of pages can be created by using a list (ordered or unordered)
-          </p>
-          <p>
             The outer most class of a modal is <strong><code>modal</code></strong>. Directly inside it is an element whose class is <strong><code>modal-dialog</code></strong>, which in turn directly contains another element <strong><code>modal-content</code></strong>. There are 3 children inside  <strong><code>modal-content</code></strong>: <strong><code>modal-header</code></strong>, <strong><code>modal-body</code></strong>, and <strong><code>modal-footer</code></strong>
           </p>
           <p>
             Users can click on a point outside the modal to close it. You can also add a <strong>close</strong> button to the modal by assigning to its attribute <strong><code>data-bs-dismiss</code></strong> a value of <strong>modal</strong>
           </p>
           <p>
-            By default, a modal is not displayed. To display it, for example, you can create a close button, assign to the buton's custom attribute <strong><code>data-bs-toggle</code></strong> as <strong>modal</strong>, and the attribute <strong><code>data-bs-target</code></strong> as the id of the modal
+            By default, a modal is not displayed. To display it, for example, you can create a toggle button, assign to the buton's custom attribute <strong><code>data-bs-toggle</code></strong> as <strong>modal</strong>, and the attribute <strong><code>data-bs-target</code></strong> as the id of the modal
           </p>
           <p>
             <img src="img/bs-modal.png" alt="bootstrap component - modal">
@@ -8454,9 +8451,11 @@ var coffee = sessionStorage['<span>coffee</span>'];</code></pre>
             Each carousel (the outer most element) must have a unique id within the page. The base class <strong><code>carousel</code></strong> is also needed. By default, slides appears/disappears. To make the slide transition smooth, add the class <strong><code>slide</code></strong>. The custom attribute <strong><code>data-bs-ride</code></strong> is used to slide between items automatically
           </p>
           <p>
-            Previous and Next buttons can be added to carousels. Use the classes <strong><code>carousel-control-prev</code></strong> and <strong><code>carousel-control-next</code></strong> for them. For those buttons, the custom attribute <strong>data-bs-target</strong> must store the carousel id. In addition the custom attribute <strong><code>data-bs-slide</code></strong> is used to set the actual slide direction.<br>            
+            Previous and Next buttons can be added to carousels. Use the classes <strong><code>carousel-control-prev</code></strong> and <strong><code>carousel-control-next</code></strong> for them. For those buttons, the custom attribute <strong>data-bs-target</strong> must store the carousel id. In addition, the custom attribute <strong><code>data-bs-slide</code></strong> is used to set the actual slide direction
+          </p>
+          <p>
             The classes <strong><code>carousel-control-prev-icon</code></strong> and <strong><code>carousel-control-prev-icon</code></strong> are used to display the Previous and Next icons on the button
-          </p>          
+          </p>
           <p>
             <img src="img/bs-carousel.png" alt="bootstrap component - carousel">
           </p>
