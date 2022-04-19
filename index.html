@@ -8654,6 +8654,23 @@ var coffee = sessionStorage['<span>coffee</span>'];</code></pre>
 
         <header>PHP Basics</header>
         <section class="content">
+          <h1>PHP Built-in Web Server</h1>
+          <p>PHP has a built-in web server that you can use to serve static HTML pages as well as dynamic PHP pages. You can start it from anywhere. The directory where you start it becomes the document root of the newly started web server.</p>
+
+          <p>You should use the built-in web server for development and testing purposes only. <strong>Do not use it in a production environment.</strong></p>
+
+          <p>To start the PHP built-in web server, use <code>php -S localhost:&lt;port_number&gt;</code> in which port_number is the port where the server is listening at. It is a numeric value.</p>
+          <p>
+            <img src="img/php_server.png" alt="hwo to start PHP built-in web server">
+          </p>
+        </section>
+
+      </section>
+
+      <section>
+
+        <header>PHP Basics</header>
+        <section class="content">
           <h1>PHP Identifiers</h1>
           <p>PHP allows you to create variables, and define constants.</p>
           <pre><code>$radius = 4; <span><span>// variable, can change</span></span>
